@@ -87,7 +87,7 @@ trait MetadataModel
             case 'json':
             case 'object':
             case 'collection':
-                return json_encode($this->attributes[$this->getValueColumn()]);
+                $value = json_encode($this->attributes[$this->getValueColumn()]);
             break;
             case 'datetime':
             case 'date':
