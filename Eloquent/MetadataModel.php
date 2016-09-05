@@ -55,8 +55,8 @@ trait MetadataModel
                     return (bool) $value;
                 case 'object':
                     return json_decode($value);
-                case 'date':
                 case 'datetime':
+                case 'date':
                 case 'timestamp':
                     return Carbon::createFromFormat('Y-m-d H:i:s', $value);
                 case 'array':
