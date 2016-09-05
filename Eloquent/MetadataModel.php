@@ -93,7 +93,7 @@ trait MetadataModel
             case 'date':
             case 'timestamp':
                 if ($value instanceof DateTime) {
-                    $value->$value->format('Y-m-d H:i:s');
+                    $value = $value->format('Y-m-d H:i:s');
                 } else {
                     $value = $this->asDateTime($this->attributes[$this->getValueColumn()])->format('Y-m-d H:i:s');
                 }
