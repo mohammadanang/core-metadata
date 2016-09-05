@@ -1,0 +1,21 @@
+{
+    "name": "apollo16/core-metadata",
+    "description": "apollo16 core metadata components",
+    "require": {
+        "nesbot/carbon": "~1.19",
+        "illuminate/database": "5.1.*",
+        "illuminate/contracts": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Apollo16\\Core\\MetaData\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
